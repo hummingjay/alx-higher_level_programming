@@ -4,4 +4,4 @@ def uppercase(str):
         if chr(up+32) in str:
             print("{}".format(chr(up)))
         else:
-            print9"{}".format(str)
+            print("{}".format(str))
