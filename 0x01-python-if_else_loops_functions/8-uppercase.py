@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def uppercase(str):
-    for up in range(65, 91):
-        if chr(up+32) in str:
-            print("{}".format(chr(up)))
-        else:
-            print("{}".format(str))
+    for up in range(97, 123):
+        if chr(up) in str:
+            x = chr(up-32)
+            print("{}".format(x))
