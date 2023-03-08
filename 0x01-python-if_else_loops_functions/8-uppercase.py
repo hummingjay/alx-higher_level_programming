@@ -2,4 +2,4 @@
 def uppercase(str):
     for up in range(65, 91):
         if chr(up+32) in str:
-            print("{}".format(chr(up)), end='')
+            print("{}".format(chr(up)))
