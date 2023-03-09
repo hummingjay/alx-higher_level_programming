@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import def add(a, b) from add_0.py as tot
+import add from add_0 
 a = 1
 b = 2
-
-print("{}".format(<a value> + <b value> = <add(a, b) value>))
+result = add(a, b)
+print("{} + {} = result".format(<a, b, result)
