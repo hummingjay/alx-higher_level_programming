@@ -5,7 +5,7 @@ def print_matrix_integer(matrix=[[]]):
     else:
         for row in matrix:
             for char in row:
-                print("{:}".format(char), end='')
+                print("{:}".format(char), end=' ')
                 # this above will print each element
-            print()
+            print("{:}".format(''))
             # this will print out each row
