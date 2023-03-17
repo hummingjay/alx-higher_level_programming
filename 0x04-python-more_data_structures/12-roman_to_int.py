@@ -1,8 +1,6 @@
 def roman_to_int(roman_string):
     roman_string = roman_string.upper()
-    if roman_string not str:
-        return 0
-    if roman_string is None:
+    if not isinstance(roman_string, str):
         return 0
 
     roman_dict = {
@@ -24,7 +22,7 @@ def roman_to_int(roman_string):
             return 0
 
         if curr_val > prev_val:
-            result += curr_val - 2 * pre_val
+            result += curr_val - 2 * prev_val
         else:
             result += curr_val
 
