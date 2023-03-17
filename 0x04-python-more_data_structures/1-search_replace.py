@@ -7,7 +7,8 @@ def search_replace(my_list, search, replace):
     # traverse list
     for i in my_list:
         #if not search or replace
-        if not search or not replace: new_list.append(i)
+        if not search or not replace:
+            new_list.append(i)
         # now fill list with append replacing where needed
         if i == search:
             new_list.append(replace)
