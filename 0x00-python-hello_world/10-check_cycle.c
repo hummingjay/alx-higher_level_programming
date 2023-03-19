@@ -8,15 +8,16 @@
  */
 int check_cycle(listint_t *list);
 {
-	listint_s *cycle, *ncycle;
+	listint_t *cycle, *ncycle;
 
 	cycle = ncycle = list;
 
 	while (cycle && ncycle && ncycle->next)
-	
+	{
 		/* cycle will move one node while nloop moves 2 */
 		cycle = cycle->next;
 		ncycle = ncycle->next->next;
+
 		if (cycle == ncycle)
 		{
 			/* there is a cycle here */
