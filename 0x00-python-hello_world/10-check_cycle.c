@@ -12,8 +12,8 @@ int check_cycle(listint_t *list);
 
 	loop = nloop = head;
 
-	while (loop && nloop && nloop->)
-	{
+	while (loop && nloop && nloop->next)
+	
 		/* loop will move one node while nloop moves 2*/
 		loop = loop->next;
 		nloop = nloop->next->next;
