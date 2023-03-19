@@ -8,20 +8,20 @@
  */
 int check_cycle(listint_t *list);
 {
-	listint_s *loop, *nloop;
+	listint_s *cycle, *ncycle;
 
-	loop = nloop = head;
+	cycle = ncycle = list;
 
-	while (loop && nloop && nloop->next)
+	while (cycle && ncycle && ncycle->next)
 	
-		/* loop will move one node while nloop moves 2*/
-		loop = loop->next;
-		nloop = nloop->next->next;
-		if (loop == nloop)
+		/* cycle will move one node while nloop moves 2 */
+		cycle = cycle->next;
+		ncycle = ncycle->next->next;
+		if (cycle == ncycle)
 		{
-			/* there is a cycle here*/
-			return 1
+			/* there is a cycle here */
+			return 1;
 		}
 	}
-	return 0
+	return 0;
 }
