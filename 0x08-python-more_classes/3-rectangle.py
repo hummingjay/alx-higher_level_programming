@@ -3,7 +3,12 @@
 
 
 class Rectangle:
-    """Class that defines a rectangle and its attributes.                                                                                 Class returns the area, perimeter and prints a rectangle                                                                              using #                                                                                                                               """ 
+    """Class that defines a rectangle and its attributes.
+
+    Args:
+        width (int) - width of the rectangle
+        height (int) - height of the rectangle
+    """ 
     def __init__(self, width=0, height=0):
         """instantiation with optional height and width"""
         self.__width = width
