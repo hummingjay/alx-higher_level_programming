@@ -64,7 +64,7 @@ class Rectangle:
             rectangle_str = ""
             for i in range(self.__height):
                 rectangle_str += "#" * self.__width + "\n"
-                return rectangle_str
+            return rectangle_str
     def __repr__(self):
         """Returns a string representation that can be used to recreate the figure"""
         return f"Recatngle(width={self.__width}, height={self.__height})"
