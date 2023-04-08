@@ -86,7 +86,9 @@ class Rectangle:
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
-    @classmethod
+   """
+   @classmethod
     def set_print_symbol(cls, symbol):
         """Class method to set print_symbol class attribute"""
         cls.print_symbol = symbol
+    """
