@@ -17,15 +17,15 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, print_symbol='#'):
-        self.print_symbol = print_symbol
+        Rectangle.print_symbol = print_symbol
 
     @property
     def print_symbol(self):
-        return self.print_symbol
+        return Rectangle.print_symbol
 
     @print_symbol.setter
     def print_symbol(self, symbol):
-        self.print_symbol = symbol
+        Rectangle.print_symbol = symbol
 
     def __init__(self, width=0, height=0):
         self.__width = width
