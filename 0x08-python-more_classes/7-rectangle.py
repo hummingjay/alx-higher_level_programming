@@ -17,17 +17,6 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-    def __init__(self, print_symbol):
-        Rectangle.print_symbol = print_symbol
-
-    @property
-    def print_symbol(self):
-        return Rectangle.print_symbol
-
-    @print_symbol.setter
-    def print_symbol(self, symbol):
-        Rectangle.print_symbol = symbol
-
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
@@ -96,3 +85,8 @@ class Rectangle:
         """Prints message if a rectangle is deleted"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
+    @classmethod
+    def set_print_symbol(cls, symbol):
+        """Class method to set print_symbol class attribute"""
+        cls.print_symbol = symbol
