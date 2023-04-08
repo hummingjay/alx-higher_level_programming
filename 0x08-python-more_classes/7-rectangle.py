@@ -15,8 +15,9 @@ class Rectangle:
         height (int): height of the rectangle
     """
     number_of_instances = 0
+    print_symbol = "#"
 
-    def __init__(self, print_symbol='#'):
+    def __init__(self, print_symbol):
         Rectangle.print_symbol = print_symbol
 
     @property
@@ -81,7 +82,7 @@ class Rectangle:
         else:
             rectangle_str = ""
             for i in range(self.__height):
-                rectangle_str += Rectangle.print_symbol * self.__width
+                rectangle_str += f"{Rectangle.print_symbol}" * self.__width
                 # rectangle_str += "#" * self.__width
                 if i != self.__height - 1:
                     rectangle_str += "\n"
