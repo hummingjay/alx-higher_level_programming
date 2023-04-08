@@ -89,4 +89,4 @@ class Rectangle:
     @classmethod
     def set_print_symbol(cls, symbol):
         """Class method to set print_symbol class attribute"""
-        Rectangle.print_symbol = symbol
+        cls.print_symbol = symbol
