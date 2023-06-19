@@ -19,8 +19,8 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     # execute takes two arguments first sql string then sub
-    cur.execute("SELECT * FROM states WHERE name LIKE
-                %s ORDER BY id ASC", (namearg))
+    cur.execute("SELECT * FROM states WHERE name LIKE '%s'
+                ORDER BY id ASC", (namearg))
 
     rows = cur.fetchall()
 
