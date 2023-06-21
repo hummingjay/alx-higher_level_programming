@@ -5,6 +5,9 @@ import sys
 
 
 if __name__ == "__main__":
+    """
+    Main program running
+    """
     if len(sys.argv) < 5:
         print("Usage: python3 script.py username password database
                name")
