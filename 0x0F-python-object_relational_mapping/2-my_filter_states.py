@@ -7,6 +7,7 @@ import MySQLdb
 # program entry
 if __name__ == "__main__":
     if len(sys.argv) < 5:
+        """ this checks if the args are less than required"""
         print("Usage: python3 script.py username password
               database name")
         sys.exit(1)
