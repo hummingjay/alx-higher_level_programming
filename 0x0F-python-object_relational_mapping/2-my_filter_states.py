@@ -3,6 +3,7 @@
 import sys
 import MySQLdb
 
+
 # program entry
 if __name__ == "__main__":
     if len(sys.argv) < 5:
@@ -16,7 +17,7 @@ if __name__ == "__main__":
     namearg = sys.argv[4]
 
     cur = db.cursor()
-    # execute takes two arguments first sql string then sub
+
     cur.execute("SELECT * FROM states WHERE name LIKE '{}'
                 ORDER BY id ASC".format(namearg))
 
