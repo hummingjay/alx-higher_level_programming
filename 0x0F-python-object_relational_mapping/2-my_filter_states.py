@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-This is a script that takes in an arg and displays all values
-in states table of hbtn_0e_0_usa where name matches arg
-"""
+"""  lists all states from the database hbtn_0e_0_usa """
 import sys
 import MySQLdb
 
