@@ -3,8 +3,11 @@
 script that takes arg and displays values from states table
 where name matches arg, write it safe MySQL injections
 """
+
+
 import MySQLdb
 import sys
+
 
 if __name__ = "__main__":
     # connect to db
