@@ -6,6 +6,7 @@ in states table of hbtn_0e_0_usa where name matches arg
 import sys
 import MySQLdb
 
+# program entry
 if __name__ == "__main__":
     if len(sys.argv) < 5:
         print("Usage: python3 script.py username password
